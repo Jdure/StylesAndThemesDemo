@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--Do not mix both inheritance-->
+    <!--If you can use explicit inheritance-->
+    <style name="AppFont">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+    <!--implicit inheritance &#45;&#45;            Explicit inheritance-->
+    <style name="AppFontColorPrimary" parent="AppFont">
+        <item name="android:textColor">@color/colorTextShadow</item>
+    </style>
+
+    <style name="AppFontColorLight" parent="AppFont">
+        <item name="android:textColor">@color/colorTextGrey</item>
+    </style>
+    
+    <style name="AppSmallText" parent="AppFontColorPrimary">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppMediumText" parent="AppFontColorPrimary">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="AppLargeText" parent="AppFontColorPrimary">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AppExtraLargeText" parent="AppFontColorPrimary">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="AppExtraLargeTextLight" parent="AppFontColorLight">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <!--NOTE: Only define styles for views which you can reuse later-->
+
+</resources>
